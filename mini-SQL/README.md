@@ -17,6 +17,6 @@ Supported commands:
 - WHERE [expression]
 
 Example:
-
-> SELECT table0.id, table0.email, table2.id, table1.id, table1.firstname FROM ((table1 INNER JOIN table2 ON table1.email = table2.email) INNER JOIN table0 ON table0.id = table2.id) WHERE table0.id > 110
-
+```SQL
+SELECT table0.id, table0.email, table2.id, table1.id, table1.firstname FROM ((table1 INNER JOIN table2 ON table1.email = table2.email) INNER JOIN table0 ON table0.id = table2.id) WHERE table0.id > 110
+```
